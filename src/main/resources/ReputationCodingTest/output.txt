@@ -1,0 +1,29 @@
+{
+  "entries" : [
+    {
+      "color" : "yellow",
+      "firstname" : "Abraham",
+      "lastname" : "Lincoln",
+      "phonenumber" : "408 164 6574",
+      "zipcode" : "84880"
+    },
+    {
+      "color" : "orange",
+      "firstname" : "Mark",
+      "lastname" : "Stevenson",
+      "phonenumber" : "916 164 3456",
+      "zipcode" : "94080"
+    },
+    {
+      "color" : "blue",
+      "firstname" : "George W.",
+      "lastname" : "Washington",
+      "phonenumber" : "212 345 6380",
+      "zipcode" : "20022"
+    }
+  ],
+  "errors" : [
+    1,
+    3
+  ]
+}
