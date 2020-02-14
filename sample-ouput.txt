@@ -1,0 +1,37 @@
+{
+  "entries": [
+    {
+      "color": "blue",
+      "firstname": "George W.",
+      "lastname": "Washington",
+      "phonenumber": " 212 345 6380",
+      "zipcode": "20022"
+    },
+    {
+      "color": "orange",
+      "firstname": " Mark",
+      "lastname": "Stevenson",
+      "phonenumber": " 916 264 5011",
+      "zipcode": "94080"
+    },
+    {
+      "color": "red",
+      "firstname": " David",
+      "lastname": "Garnitz",
+      "phonenumber": " 626 429 8474",
+      "zipcode": "91030"
+    },
+    {
+      "color": "acqua-marine",
+      "firstname": "Davide",
+      "lastname": "Garnizzi",
+      "phonenumber": " (626) 441-2420",
+      "zipcode": "91030"
+    }
+  ],
+  "errors": [
+    1,
+    2,
+    3
+  ]
+}

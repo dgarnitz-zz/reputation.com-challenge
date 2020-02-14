@@ -52,12 +52,12 @@ public class Converter {
             return;
         }
 
-        if(!processPhone(Arrays.copyOfRange(inputs, inputs.length-3, inputs.length), entry, currentIndex)) {
+        if(!processPhone(Arrays.copyOfRange(inputs, inputs.length-3, inputs.length), entry)) {
             errors.add(currentIndex);
             return;
         }
 
-        if(!processZipcode(Arrays.copyOfRange(inputs, inputs.length-3, inputs.length), entry, currentIndex)) {
+        if(!processZipcode(Arrays.copyOfRange(inputs, inputs.length-3, inputs.length), entry)) {
             errors.add(currentIndex);
             return;
         }
@@ -121,7 +121,7 @@ public class Converter {
         return false;
     }
 
-    public static boolean processPhone(String[] contactInfoWithoutName, JSONObject entry, int currentIndex){
+    public static boolean processPhone(String[] contactInfoWithoutName, JSONObject entry){
         /**
          * Makes use of Google's libphonenumber library
          * Assumption: only numbers deemed valid by the library will be considered valid in this program
@@ -146,11 +146,10 @@ public class Converter {
             }
 
         }
-        System.out.println("Failed at: processPhone - did not find valid number for item " + currentIndex);
         return false;
     }
 
-    public static boolean processZipcode(String[] contactInfoWithoutName, JSONObject entry, int currentIndex){
+    public static boolean processZipcode(String[] contactInfoWithoutName, JSONObject entry){
         for(String info: contactInfoWithoutName) {
             info = info.trim();
             if(info.length() == 5 && info.matches("^[0-9]{5}(?:-[0-9]{4})?$")){
